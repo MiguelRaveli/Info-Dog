@@ -1,0 +1,299 @@
+@keyframes brilhar {
+  from {
+    background-color: #808080;
+  }
+  to {
+    background-color: #565656;
+  }
+}
+
+body {
+  margin: 0px;
+  background-color: rgb(31, 31, 31);
+  text-align: center;
+}
+
+#header {
+  background-color: rgb(14, 14, 14);
+  height: 150px;
+  width: auto;
+  font-size: 30pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#search {
+  width: 500px;
+  height: 30px;
+  font-size: 15pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-left: 50px;
+}
+
+#searchBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: #ebebeb solid 1px;
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: white;
+  margin-left: 10px;
+}
+
+#searchBtn:hover {
+  cursor: pointer;
+}
+
+#dogBody {
+  display: flex;
+}
+
+#body {
+  text-align: center;
+}
+
+#dogFrameLabel {
+  margin: 20px 20px;
+  width: 900px;
+  height: auto;
+  border-style: solid;
+  border-color: rgb(3, 3, 3);
+  background-color: rgb(41, 41, 41);
+  border-width: 1px;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+  color: white;
+  padding: 15px;
+  font-size: 17pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+#dogsLabel {
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  margin-top: 20px;
+  height: 300px;
+  border-bottom: solid;
+  border-color: #000000;
+  border-width: 7px;
+  border-radius: 3%;
+  margin-left: 36px;
+}
+
+#dogsBody {
+  display: flex;
+}
+
+#buttonNext {
+  display: flex;
+}
+#buttonPrevious {
+  display: flex;
+  align-items: center;
+}
+
+#footerHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: sticky;
+  height: 100px;
+  width: 100%;
+  font-size: 16pt;
+  bottom: 0;
+  background-color: rgb(27, 27, 27);
+}
+
+#btnvoltar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: #ebebeb solid 1px;
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  background-color: white;
+}
+
+#btnproximo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: #ebebeb solid 1px;
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  background-color: white;
+}
+
+#dogImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  height: 300px;
+  border-width: 7px;
+  border-radius: 3%;
+  border: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 1px;
+}
+
+#btnproximo:hover {
+  cursor: pointer;
+}
+#btnvoltar:hover {
+  cursor: pointer;
+}
+
+#dogFrameImg {
+  margin: 20px 20px;
+  width: calc(30% - 40px);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 2.5px;
+  border: solid;
+  border-color: rgb(0, 0, 0);
+  height: 400px;
+  background-color: rgb(41, 41, 41);
+  border-width: 1px;
+  border-radius: 3%;
+
+}
+
+
+.dogsImg {
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  margin-top: 20px;
+  height: 300px;
+  border-bottom: solid;
+  border-color: #000000;
+  border-width: 7px;
+  border-radius: 3%;
+}
+.frameDOGS {
+  margin: 20px 20px;
+  width: calc(30% - 40px);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aliceblue;
+  border-width: 2.5px;
+  border-radius: 2.5px;
+  border-bottom: solid;
+  border-color: rgb(0, 0, 0);
+  height: 400px;
+  background-color: rgb(41, 41, 41);
+  border-width: 4px;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
+}
+
+
+
+.dogLoading img {
+  height: 50px;
+  width: 50px;
+  
+}
+.dogLoading {
+  margin: 20px 20px;
+  width: 356px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aliceblue;
+  border-width: 2.5px;
+  border-radius: 2.5px;
+  height: 400px;
+  background-color: rgb(41, 41, 41);
+  border-width: 4px;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
+  animation: brilhar;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.frame:hover {
+  transform: scale(1.04);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.numerations {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: #ebebeb solid 1px;
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: white;
+}
+
+.dogsLabel {
+  font-size: 15pt;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.dogsLabelDIV {
+  display: flex;
+  justify-content: center;
+}
+
+.dogsLabel {
+  font-size: 15pt;
+  padding: 10px;
+}
+
+.numerations:hover {
+  cursor: pointer;
+}
+
+.numerations:focus {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+button:disabled,
+button[disabled] {
+  opacity: 0.2;
+  
+}
+
+.numerations:disabled{
+  opacity: 1;
+  background-color: #000000;
+  color: white;
+}

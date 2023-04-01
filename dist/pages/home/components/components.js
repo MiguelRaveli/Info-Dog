@@ -1,0 +1,12 @@
+const bodyHome = document.getElementById("body");
+const footer = document.getElementById("footerHome");
+const searchBar = document.getElementById("search");
+const searchBtn = document.getElementById("searchBtn");
+const btnNext = document.createElement("button");
+btnNext.setAttribute("id", "btnproximo");
+btnNext.innerHTML = ">";
+const btnPrevious = document.createElement("button");
+btnPrevious.setAttribute("id", "btnvoltar");
+btnPrevious.innerHTML = "<";
+const skeleton = document.getElementById('skeleton');
+export { bodyHome, footer, btnNext, btnPrevious, searchBar, searchBtn, skeleton };

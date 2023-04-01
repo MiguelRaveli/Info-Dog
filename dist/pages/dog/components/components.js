@@ -1,0 +1,18 @@
+const bodyDog = document.getElementById("dogBody");
+const footer = document.getElementById("footerHome");
+const header = document.getElementById("header");
+const frameImg = document.createElement("div");
+frameImg.setAttribute("id", "dogFrameImg");
+const frameLabel = document.getElementById("dogFrameLabel");
+const name = document.getElementById("name");
+const bred_for = document.getElementById("bred_for");
+const breed_group = document.getElementById("breed_group");
+const life_span = document.getElementById("life_span");
+const temperament = document.getElementById("temperament");
+const img = document.createElement("div");
+img.setAttribute("id", "dogImg");
+const label = document.createElement("a");
+label.setAttribute("id", "dogLabel");
+frameImg.append(img);
+frameLabel.append(label);
+export { footer, bodyDog, frameImg, frameLabel, img, label, header, temperament, bred_for, breed_group, life_span, name, };
